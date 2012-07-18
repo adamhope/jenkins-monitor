@@ -2,24 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Build Dashboard</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
 </head>
 
 <body>
 
-    <audio name="sound" id="sound"></audio>
-    <div id="content">
-        <h2>Jenkins Monitor</h2>
-        <cite>kanban for radiate ci status</cite>
-        <h5>Better using Safari or Google Chrome</h5>
+    <audio id="sound"></audio>
+
+    <div id="frame">
+
+        <ul class="nav nav-tabs">
+          <!-- Example: This is how you add an extra tab -->
+          <!-- <li><a href="#your-stuff">Your Stuff</a></li> -->
+        </ul>
+
+        <div class="pill-content">
+            <!-- Example: Adding extra tab content -->
+            <!-- #your-stuff -->
+            <!-- <section id="your-stuff">
+                <header><h2>Other Stuff</h2></header>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section> -->
+        </div>
+
     </div>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="js/jenkinsDashboard.js"></script>
-    <script type="text/javascript" src="conf/config.js.sample"></script>
-    <script type="text/javascript" src="conf/config.js"></script>
+    <!-- Libs -->
+    <script src="libs/underscore-min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery.jsonp-2.1.4.min.js"></script>
+    <!-- Dashboard Config -->
+    <script src="conf/config.defaults.js"></script>
+    <script src="conf/config.js"></script>
+    <!-- Dashboard -->
+    <script src="js/dashboard.js"></script>
+    <!-- Plugins -->
+    <script src="js/jenkins.js"></script>
 
 </body>
 
