@@ -15,7 +15,7 @@ var dashboard = (function () {
         cfg;
 
     function setDefaults() {
-        cfg = $.extend({}, DEFAULTS, CONFIG);
+        cfg = typeof CONFIG !== "undefined" ? DEFAULTS : $.extend({}, DEFAULTS);
     }
 
     function setTitle() {

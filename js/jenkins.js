@@ -90,7 +90,7 @@
 
     function init() {
 
-        el = dashboard.createTab('GMP Build Status');
+        el = dashboard.createTab(dashboardConfig.project_title);
 
         $('header', el.parent()).append('<p class="timestamp" />');
 
